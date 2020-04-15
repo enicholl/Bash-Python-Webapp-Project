@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results Page</title>
+</head>
+<body>
+    <div>
+        <p><font face="verdana" size="6" color="DeepPink"> There is {{dog}} Dogs, {{cats}} Cats, {{ mice }} Mice and {{ catm }} Cat and Mouse! </font></p>
+        {% for x in range(dog)   %}
+        <img src="https://i.pinimg.com/originals/30/42/01/304201d0c03e69377068629f4f25012a.jpg" width="100" height="100">
+        {% endfor %}
+        {% for x in range(cats) %}
+        <img src="https://i.pinimg.com/originals/f2/ce/c9/f2cec98f06e8f66ff0bcfb2ffdb413eb.jpg" width="100" height="100">
+        {% endfor %}
+        {% for x in range(mice) %}
+        <img src="https://www.bestfunnies.com/wp-content/uploads/2012/01/Funny-and-Cute-Mouses-Funny-Mouse-Picture-021-FunnyPica.com_.jpg" width="100" height="100">
+        {% endfor %}
+        {% for x in range(catm) %}
+        <img src="https://i.pinimg.com/236x/c7/ab/2b/c7ab2bceaf86af08ecebb9ea5b2c8433.jpg" width="100" height="100">
+        {% endfor %}
+        <p><font face="verdana" size="4" color="DeepPink"> See the full list of all Cats, Dogs and Mice below: </font></p>
+
+        {% for x in text  %}
+
+         <font face="verdana" size="4" color="HotPink"> {{ x }} <br> </font>
+
+        {% endfor %}
+    </div>
+
+
+</body>
+</html>
