@@ -49,11 +49,12 @@ For Ubuntu systems, you first need to run a system update before installing pyth
 sudo apt-get update
 sudo apt-get install python3
 ```
+-----
 For Centos systems, use the yum module to install python3 in the terminal with the below command:
 ```
 sudo yum install python3
 ```
-
+-----
 Linux systems should already have python installed and this can be checked with the below command:
 ```
 python3 --version
