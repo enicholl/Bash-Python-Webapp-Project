@@ -3,9 +3,14 @@ var express = require('express');
 var path = require('path');
 var routes = require('./routes/index');
 var bodyParser = require('body-parser');
+var helpers = require('./modules/helpers.js');
 
 // saves express module as variable 'app'
 var app = express();
+
+
+app.locals.range = helpers.range;
+
 
 // tells app to use pug as layout engine
 app.engine('pug', require('pug').__express)

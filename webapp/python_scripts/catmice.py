@@ -6,7 +6,7 @@ def cat_mouse(player_number=100):  # default number 100 if none selected by user
         for x in range(int(sys.argv[1]) + 1):  # loops over every number up to and including the users chosen number
                 prime = True
                 for p in range(2, x):  # identifies which numbers ARE NOT prime and changes boolean to false
-			if x % p == 0:
+                        if x % p == 0:
                                 prime = False
                 if (x == 1) or (x == 0):  # ensures that 0 and 1 are not included as prime numbers
                         prime = False
